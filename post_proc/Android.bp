@@ -35,6 +35,7 @@ cc_library_shared {
         "libhardware_headers",
         "libsystem_headers",
         "qti_kernel_headers",
+        "libqtiaudiohal_headers",
     ],
 
     shared_libs: [
@@ -43,10 +44,6 @@ cc_library_shared {
         "liblog",
         "libtinyalsa",
     ],
-
-    sanitize: {
-        integer_overflow: true,
-    },
 }
 
 cc_library_shared {
@@ -80,9 +77,9 @@ cc_library_shared {
 
     header_libs: [
         "libhardware_headers",
+        "libsystem_headers",
         "qti_kernel_headers",
         "libqtiaudiohal_headers",
-        "libqtiaudioextn_headers",
     ],
 
     shared_libs: [
@@ -90,8 +87,4 @@ cc_library_shared {
         "libdl",
         "liblog",
     ],
-
-    sanitize: {
-        integer_overflow: true,
-    },
 }
