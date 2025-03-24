@@ -1,0 +1,11 @@
+cc_library_headers {
+    name: "libqtiaudiohal_headers",
+    export_include_dirs: ["."],
+    vendor: true,
+}
+
+cc_library_headers {
+    name: "libqtiaudioextn_headers",
+    export_include_dirs: ["audio_extn"],
+    vendor: true,
+}

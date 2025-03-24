@@ -74,8 +74,6 @@ cc_library_shared {
     include_dirs: [
         "external/tinyalsa/include",
         "external/tinycompress/include",
-        "hardware/qcom-caf/sm8150/audio/hal",
-        "hardware/qcom-caf/sm8150/audio/hal/audio_extn",
         "system/media/audio_route/include",
         "system/media/audio_utils/include",
     ],
@@ -83,6 +81,8 @@ cc_library_shared {
     header_libs: [
         "libhardware_headers",
         "qti_kernel_headers",
+        "libqtiaudiohal_headers",
+        "libqtiaudioextn_headers",
     ],
 
     shared_libs: [
